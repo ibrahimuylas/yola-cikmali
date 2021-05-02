@@ -1,0 +1,16 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            const getNewUrl = path => `https://www.ibrahimuylas.com/${path}`; 
+            const newPath = "";
+            const page = window.location.pathname.substring(window.location.pathname.lastIndexOf('/') + 1);
+            if(page === "trekkingde-dikkat-edilmesi-gerekenler")
+                newPath = "doga-yuruyuslerinde-dikkat-edilmesi-gerekenler";
+            
+            window.location.replace(getNewUrl(newPath));
+        </script>
+    </body>
+</html>
