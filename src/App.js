@@ -1,7 +1,6 @@
 import './App.css';
 import {
-  BrowserRouter as Router,
-  Redirect
+  BrowserRouter as Router
 } from "react-router-dom";
 
 function redirect() {
