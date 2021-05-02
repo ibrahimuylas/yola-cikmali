@@ -1,4 +1,8 @@
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Redirect
+} from "react-router-dom";
 
 function redirect() {
   const getNewUrl = path => `https://www.ibrahimuylas.com/${path}`;
@@ -219,15 +223,10 @@ function redirect() {
 }
 
 function App() {
-  redirect();
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          redirecting to www.ibrahimuylas.com
-        </p>
-      </header>
-    </div>
+    <Router>
+      {redirect()}
+    </Router>
   );
 }
 
